@@ -1,6 +1,7 @@
 /* =========================================================
    RM SOFTWARE & SOLUTIONS
-   Sitio comercial
+   style.css COMPLETO
+   Incluye corrección para que "negocio." no se corte.
    ========================================================= */
 
 :root {
@@ -222,26 +223,33 @@ button {
 .hero {
     min-height: 100vh;
     padding-top: 130px;
-    padding-bottom: 70px;
+    padding-bottom: 90px;
     display: grid;
     grid-template-columns: 1.12fr 0.88fr;
     align-items: center;
     gap: 70px;
+    overflow: visible;
 }
 
 .hero-copy {
     max-width: 680px;
+    overflow: visible;
 }
 
 .hero h1 {
     margin-bottom: 23px;
+    padding-bottom: 0.14em;
     font-size: clamp(3rem, 6vw, 5rem);
-    line-height: 1.02;
+    line-height: 1.08;
     letter-spacing: -0.04em;
+    overflow: visible;
 }
 
 .hero h1 span {
     display: block;
+    padding-bottom: 0.08em;
+    line-height: 1.12;
+    overflow: visible;
     background: linear-gradient(
         90deg,
         var(--gold-light),
@@ -832,6 +840,18 @@ button {
     .hero {
         min-height: auto;
         padding-top: 125px;
+        padding-bottom: 75px;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.55rem, 14vw, 4rem);
+        line-height: 1.1;
+        padding-bottom: 0.18em;
+    }
+
+    .hero h1 span {
+        line-height: 1.14;
+        padding-bottom: 0.12em;
     }
 
     .signature-seal {
