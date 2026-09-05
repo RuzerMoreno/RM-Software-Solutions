@@ -908,3 +908,18 @@ button {
         animation: none;
     }
 }
+
+
+/* ===== COMPRA, DEMOSTRACIÓN E INSTALACIÓN REMOTA ===== */
+.plan-actions { display:grid; gap:12px; margin-top:24px; }
+.plan-actions .btn { width:100%; text-align:center; }
+.btn-demo { border:1px solid rgba(212,175,55,.65); color:#e7c968; background:transparent; }
+.btn-demo:hover { background:rgba(212,175,55,.10); transform:translateY(-2px); }
+.remote-flow { margin-top:34px; padding:28px; border:1px solid rgba(212,175,55,.25); border-radius:20px; background:rgba(255,255,255,.025); }
+.remote-flow h3 { margin:.35rem 0 1.25rem; font-size:clamp(1.35rem,3vw,2rem); }
+.remote-flow > p:last-child { margin:18px 0 0; opacity:.78; }
+.remote-steps { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
+.remote-steps span { display:flex; align-items:center; gap:10px; padding:14px; border-radius:14px; background:rgba(0,0,0,.22); }
+.remote-steps b { display:grid; place-items:center; flex:0 0 30px; height:30px; border:1px solid #d4af37; border-radius:50%; color:#e7c968; }
+@media (max-width:900px){ .remote-steps{grid-template-columns:1fr 1fr;} }
+@media (max-width:560px){ .remote-steps{grid-template-columns:1fr;} .remote-flow{padding:22px 18px;} }

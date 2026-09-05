@@ -54,13 +54,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const plan = button.dataset.plan || "Barber POS";
         const price = button.dataset.price || "";
+        const intent = button.dataset.intent || "información";
 
         const planMessage =
-            `Hola, vi la página de RM Software & Solutions. ` +
-            `Me interesa ${plan}` +
-            `${price ? ` (${price})` : ""}. ` +
-            `Quisiera información para contratar e instalar ` +
-            `el sistema.`;
+            `Hola, RM Software & Solutions.\n\n` +
+            `Vi su página y me interesa ${plan}` +
+            `${price ? ` (${price})` : ""}.\n` +
+            `Quiero solicitar: ${intent}.\n\n` +
+            `Nombre: \n` +
+            `Nombre de mi barbería: \n` +
+            `Ciudad: \n` +
+            `Número de equipos: `;
 
         button.href =
             createWhatsAppUrl(planMessage);
